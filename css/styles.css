@@ -1211,7 +1211,7 @@ subscribe-btn:focus {
   }
 
   .adress-link {
-    display: block;
+    /* display: block; */
 
     font-size: 12px;
     line-height: 1.67;
