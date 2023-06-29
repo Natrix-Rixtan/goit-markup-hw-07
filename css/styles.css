@@ -833,7 +833,7 @@ subscribe-btn:focus {
 .modal {
   /* width: 100vw; */
   height: 100vh;
-  min-width: calc(100% - 2 * 15px);
+  min-width: calc(100% - 30px);
   padding-top: 72px;
   padding-bottom: 24px;
   padding-left: 24px;
@@ -1095,6 +1095,18 @@ subscribe-btn:focus {
   .container {
     max-width: 290px;
   }
+
+  .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: calc(100% - 30px);
+    max-width: 290px;
+    max-height: 640px;
+  }
 }
 
 @media screen and (min-width: 428px) {
@@ -1113,17 +1125,17 @@ subscribe-btn:focus {
   }
 
   .modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     min-width: 398px;
     max-width: 408px;
     max-height: 584px;
   }
 }
+
+/* @media screen and (max-height: 614px) {
+  .modal {
+    max-height: 584px;
+  }
+} */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -1207,14 +1219,14 @@ subscribe-btn:focus {
   .header-list-adress {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 12px;
   }
 
   .adress-link {
-    /* display: block; */
+    display: block;
 
     font-size: 12px;
-    line-height: 1.67;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--slate);
 
